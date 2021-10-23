@@ -500,7 +500,7 @@ function! airline#extensions#load()
     call add(s:loaded_ext, 'omnisharp')
   endif
 
-  if get(g:, 'airline#extensions#rufo', 0) && get(g:, 'rufo_loaded', 0)
+  if (get(g:, 'airline#extensions#rufo#enabled', 0) && get(g:, 'rufo_loaded', 0))
     call airline#extensions#rufo#init(s:ext)
     call add(s:loaded_ext, 'rufo')
   endif

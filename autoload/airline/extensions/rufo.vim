@@ -36,4 +36,3 @@ function! airline#extensions#rufo#apply(...)
     let w:airline_section_z .= '%{airline#extensions#rufo#get_status()}'
   endif
 endfunction
-
